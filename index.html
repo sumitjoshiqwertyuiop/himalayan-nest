@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Himalayan Nest – Dwarahat Homestay &amp; Travel Guide</title>
+  <meta name="description" content="Demonstration website for Himalayan Nest, a concept homestay in Dwarahat, Almora, Uttarakhand.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a href="#home" class="logo">Himalayan Nest</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="#home">Home</a><a href="#about">About Homestay</a><a href="#rooms">Rooms &amp; Facilities</a>
+        <a href="#explore">Explore Dwarahat</a><a href="#gallery">Gallery</a><a href="#contact">Contact Us</a>
+        <a href="#booking" class="btn btn--gold">Book Your Stay</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" role="img" aria-label="Illustration of layered Himalayan ridges at dusk"></div>
+      <div class="wrap hero__txt">
+        <p class="hero__tag">Experience the Beauty of Kumaon, Feel at Home.</p>
+        <h1>Himalayan Nest</h1>
+        <p class="hero__sub">Your Peaceful Escape in the Heart of Kumaon</p>
+        <p class="hero__lead">Discover the beauty of Dwarahat, experience authentic Kumaoni hospitality, and create unforgettable memories.</p>
+        <div class="hero__cta"><a href="#about" class="btn btn--gold">Explore Homestay</a><a href="#explore" class="btn btn--ghost">Discover Nearby Places</a></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="sec" id="about">
+      <div class="wrap split">
+        <img src="images/about.svg" alt="Illustration of a traditional stone and slate-roof house among Kumaon hills" loading="lazy" class="rounded reveal">
+        <div class="reveal">
+          <h2>A family-run home in the hills of Dwarahat</h2>
+          <p>Himalayan Nest is imagined as a welcoming Kumaoni homestay where mornings begin with mountain air and tea on the veranda. Guests share the rhythm of a village household: home-cooked meals, stories of local temples, and quiet evenings under open skies.</p>
+          <ul class="ticks">
+            <li>Peaceful mountain surroundings</li><li>Traditional Kumaoni hospitality</li>
+            <li>Local food and culture experiences</li><li>Comfortable, clean accommodation</li>
+          </ul>
+          <p class="note"><strong>Demonstration concept:</strong> Himalayan Nest is a fictional homestay built for a web development project. All details, prices and images are illustrative.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section class="sec sec--tint" id="rooms">
+      <div class="wrap">
+        <h2>Rooms &amp; accommodation</h2><p class="lead">Three illustrative stay options. Prices are sample values only.</p>
+        <div class="grid grid--3" id="roomGrid"></div>
+        <h3 class="sub">Facilities &amp; amenities</h3>
+        <div class="grid grid--4" id="facilityGrid"></div>
+      </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="sec" id="explore">
+      <div class="wrap">
+        <h2>Explore nearby attractions</h2>
+        <p class="lead">Temples, forests and viewpoints around Dwarahat. Select a card to read more. Figures marked “approx.” are rough road distances; confirm locally before travelling.</p>
+        <div class="grid grid--3" id="destGrid"></div>
+      </div>
+    </section>
+
+    <!-- Travel guide -->
+    <section class="sec sec--green" id="guide">
+      <div class="wrap">
+        <h2>Plan your journey to Dwarahat</h2>
+        <div class="grid grid--3 guide">
+          <article><h3>How to reach</h3><p>Dwarahat is a hill town in Almora district, reached mainly by road from Ranikhet, Almora and Kumaon’s plains gateways.</p></article>
+          <article><h3>Nearest railway station</h3><p>Kathgodam (Haldwani) is the commonly used railhead for Kumaon. <span class="tag">Distance to be confirmed</span></p></article>
+          <article><h3>Nearest airport</h3><p>Pantnagar Airport is the usual airport for Kumaon, with onward travel by road. <span class="tag">Distance to be confirmed</span></p></article>
+          <article><h3>Road connectivity</h3><p>State and district roads link Dwarahat with Ranikhet and Almora. Hill roads are winding; allow extra time.</p></article>
+          <article><h3>Best time to visit</h3><p>Spring (March–May) and autumn (October–November) are generally pleasant. Monsoon can bring landslides; winters are cold. <span class="tag">General guidance</span></p></article>
+          <article><h3>Local transport</h3><p>Shared taxis and local buses operate in the region; private cabs are usually arranged in advance. <span class="tag">Confirm schedules locally</span></p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="sec" id="gallery">
+      <div class="wrap">
+        <h2>Photo gallery</h2><p class="lead">Illustrative artwork. Swap in your own photographs for the final presentation.</p>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="sec sec--tint" id="booking">
+      <div class="wrap book">
+        <div>
+          <h2>Send a booking enquiry</h2>
+          <p>Tell us your dates and group size. This is a frontend demonstration: submitting the form does not create a reservation and no data is sent anywhere.</p>
+        </div>
+        <form id="bookForm" novalidate>
+          <div class="f"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required><small class="err"></small></div>
+          <div class="f"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><small class="err"></small></div>
+          <div class="f"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required><small class="err"></small></div>
+          <div class="f"><label for="guests">Number of guests</label><input id="guests" name="guests" type="number" min="1" max="12" value="2" required><small class="err"></small></div>
+          <div class="f"><label for="checkin">Check-in date</label><input id="checkin" name="checkin" type="date" required><small class="err"></small></div>
+          <div class="f"><label for="checkout">Check-out date</label><input id="checkout" name="checkout" type="date" required><small class="err"></small></div>
+          <div class="f full"><label for="room">Room preference</label><select id="room" name="room" required><option value="">Choose a room</option></select><small class="err"></small></div>
+          <div class="f full"><label for="message">Additional message</label><textarea id="message" name="message" rows="3"></textarea></div>
+          <button class="btn btn--green full" type="submit">Submit Enquiry</button>
+          <p id="formMsg" class="success full" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="sec" id="contact">
+      <div class="wrap">
+        <h2>Contact us</h2>
+        <div class="grid grid--3 contact">
+          <div><h3>Himalayan Nest</h3><p>Dwarahat, Almora, Uttarakhand, India</p><p class="note">Concept project; not a verified business address.</p></div>
+          <div><h3>Reach us</h3><p>Phone: +91 XXXXX XXXXX (placeholder)</p><p>Email: hello@example.com (placeholder)</p></div>
+          <div><h3>Find the area</h3><p><a href="https://www.openstreetmap.org/search?query=Dwarahat%2C%20Almora" target="_blank" rel="noopener">Open Dwarahat on OpenStreetMap</a></p>
+            <p class="social"><span title="Placeholder">Facebook</span><span title="Placeholder">Instagram</span><span title="Placeholder">YouTube</span></p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap grid grid--4">
+      <div><p class="logo">Himalayan Nest</p><p>A demonstration homestay and travel guide for Dwarahat, Kumaon.</p></div>
+      <div><h3>Quick links</h3><a href="#about">About</a><a href="#rooms">Rooms</a><a href="#gallery">Gallery</a><a href="#booking">Enquiry</a></div>
+      <div><h3>Destinations</h3><a href="#explore">Dunagiri Temple</a><a href="#explore">Pandukholi</a><a href="#explore">Jageshwar Dham</a><a href="#explore">Katarmal Sun Temple</a></div>
+      <div><h3>Contact</h3><p>Dwarahat, Almora, Uttarakhand</p><p>+91 XXXXX XXXXX</p><p>hello@example.com</p></div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> Himalayan Nest. Demonstration project; all details are illustrative.</p>
+  </footer>
+
+  <button id="toTop" class="totop" aria-label="Back to top" hidden>&uarr;</button>
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb__x" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb__n lb__prev" id="lbPrev" aria-label="Previous">&lsaquo;</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb__n lb__next" id="lbNext" aria-label="Next">&rsaquo;</button>
+  </div>
+  <dialog id="roomDialog"><form method="dialog"><div id="roomBody"></div><button class="btn btn--green">Close</button></form></dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
